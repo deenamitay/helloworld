@@ -3,9 +3,11 @@ var router = express.Router();
 
 router.get('/:person', function(req, res){
 	var rendarParms = {
+    jsScript: 'cool.js',
 		nameofUser: req.params.person
-	}
-	res.render('hello.html',rendarParms)
+	};
+
+	res.render('members.html',rendarParms);
 	// res.send('hello ' + req.params.person)
 });
 module.exports = router;

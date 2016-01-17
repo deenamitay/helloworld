@@ -1,0 +1,27 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>So Cool{% block title %}{% endblock %}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">So Cool</a>
+        </div>
+      </div>
+    </div>
+    <div class="container content">
+       {% block content %}{% endblock %}
+    </div>
+    <div id="footer" class="container text-muted">
+      So Cool by D&ampD
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/js/{{jsScript}}"></script>
+  </body>
+</html>

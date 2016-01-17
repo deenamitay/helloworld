@@ -1,3 +1,13 @@
-<h1> Hello {{nameofUser}} </h1>
-<h3> Drew is sooooo cool </h3>
+{% extends "layout.html" %}
 
+{% block title %}Members Area{% endblock %}
+
+{% block content %}
+<div class="j-container">
+  <div class="jumbotron">
+    <h1> Welcome! Who are you? </h1>
+    <input id='name-input' type="text" name="name" placeholder="First name">
+    <button id='name-btn' type="button" class="btn btn-info">This is my name</button>
+  </div>
+</div>
+{% endblock %}
